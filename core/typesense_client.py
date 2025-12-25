@@ -105,7 +105,7 @@ def fetch_typesense_tags_for_bot_ids(bot_ids: List[str]) -> Dict[str, List[str]]
     return tag_map
 
 
-def fetch_typesense_ratings_for_bot_ids(bot_ids: List[str]) -> Dict[str, float | None]:
+def fetch_typesense_ratings_for_bot_ids(bot_ids: List[str]) -> Dict[str, float or None]:
     """
     Fetch rating_score for specific bot IDs from Typesense.
     Returns: { "bot_id": float or None }
